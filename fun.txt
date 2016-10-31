@@ -1,1 +1,379 @@
-“Hello world!” - said everyone, always
+Last login: Mon Oct 31 15:49:17 on ttys000
+Scotts-MacBook-Pro:~ scott$ pwd
+/Users/scott
+Scotts-MacBook-Pro:~ scott$ ls
+Applications	Documents	Library		Music		Programming
+Desktop		Downloads	Movies		Pictures	Public
+Scotts-MacBook-Pro:~ scott$ cd Programming
+Scotts-MacBook-Pro:Programming scott$ cd devmtn
+Scotts-MacBook-Pro:devmtn scott$ ls
+bug-free-goggles	test-repo
+Scotts-MacBook-Pro:devmtn scott$ git clone https://github.com/crazycraka/cautious-enigma.git
+Cloning into 'cautious-enigma'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+Scotts-MacBook-Pro:devmtn scott$ ls
+bug-free-goggles	cautious-enigma		test-repo
+Scotts-MacBook-Pro:devmtn scott$ ls
+bug-free-goggles	test-repo
+Scotts-MacBook-Pro:devmtn scott$ mkdir myProject
+Scotts-MacBook-Pro:devmtn scott$ cd myProject
+Scotts-MacBook-Pro:myProject scott$ pwd
+/Users/scott/Programming/devmtn/myProject
+Scotts-MacBook-Pro:myProject scott$ git clone https://github.com/crazycraka/cautious-enigma.git
+Cloning into 'cautious-enigma'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+Scotts-MacBook-Pro:myProject scott$ pwd
+/Users/scott/Programming/devmtn/myProject
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ git init
+Initialized empty Git repository in /Users/scott/Programming/devmtn/myProject/.git/
+Scotts-MacBook-Pro:myProject scott$ cd myProject
+-bash: cd: myProject: No such file or directory
+Scotts-MacBook-Pro:myProject scott$ cd cautious-enigma
+Scotts-MacBook-Pro:cautious-enigma scott$ git init
+Reinitialized existing Git repository in /Users/scott/Programming/devmtn/myProject/cautious-enigma/.git/
+Scotts-MacBook-Pro:cautious-enigma scott$ cd ..
+Scotts-MacBook-Pro:myProject scott$ ls -la
+total 0
+drwxr-xr-x   4 scott  staff  136 Oct 31 16:38 .
+drwxr-xr-x   6 scott  staff  204 Oct 31 16:37 ..
+drwxr-xr-x  10 scott  staff  340 Oct 31 16:38 .git
+drwxr-xr-x   3 scott  staff  102 Oct 31 16:37 cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ cd ~
+Scotts-MacBook-Pro:~ scott$ ls
+Applications	Documents	Library		Music		Programming
+Desktop		Downloads	Movies		Pictures	Public
+Scotts-MacBook-Pro:~ scott$ cd Programming
+Scotts-MacBook-Pro:Programming scott$ ls
+Pre-MountProjects	jquery
+WebstormProjects	projectBuilder
+Scotts-MacBook-Pro:Programming scott$ mkdir devmtn
+Scotts-MacBook-Pro:Programming scott$ ls
+Pre-MountProjects	devmtn			projectBuilder
+WebstormProjects	jquery
+Scotts-MacBook-Pro:Programming scott$ cd devmtn
+Scotts-MacBook-Pro:devmtn scott$ pwd
+/Users/scott/Programming/devmtn
+Scotts-MacBook-Pro:devmtn scott$ mkdir myProject
+Scotts-MacBook-Pro:devmtn scott$ ls
+myProject
+Scotts-MacBook-Pro:devmtn scott$ cd myProject
+Scotts-MacBook-Pro:myProject scott$ ls
+Scotts-MacBook-Pro:myProject scott$ pwd
+/Users/scott/Programming/devmtn/myProject
+Scotts-MacBook-Pro:myProject scott$ git clone https://github.com/crazycraka/cautious-enigma.git
+Cloning into 'cautious-enigma'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ ls -la
+total 0
+drwxr-xr-x  3 scott  staff  102 Oct 31 16:41 .
+drwxr-xr-x  3 scott  staff  102 Oct 31 16:40 ..
+drwxr-xr-x  3 scott  staff  102 Oct 31 16:41 cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ git init
+Initialized empty Git repository in /Users/scott/Programming/devmtn/myProject/.git/
+Scotts-MacBook-Pro:myProject scott$ ls -la
+total 0
+drwxr-xr-x   4 scott  staff  136 Oct 31 16:41 .
+drwxr-xr-x   3 scott  staff  102 Oct 31 16:40 ..
+drwxr-xr-x  10 scott  staff  340 Oct 31 16:41 .git
+drwxr-xr-x   3 scott  staff  102 Oct 31 16:41 cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ clear
+
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma
+Scotts-MacBook-Pro:myProject scott$ pwd
+/Users/scott/Programming/devmtn/myProject
+Scotts-MacBook-Pro:myProject scott$ git remote add origin https://github.com/crazycraka/cautious-enigma.git
+Scotts-MacBook-Pro:myProject scott$ touch test.html
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma	test.html
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Scotts-MacBook-Pro:myProject scott$ git add .
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   test.html
+
+Scotts-MacBook-Pro:myProject scott$ git commit -m "practice for myProject"
+[master (root-commit) 9f1b089] practice for myProject
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.html
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+nothing to commit, working tree clean
+Scotts-MacBook-Pro:myProject scott$ git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 228 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/crazycraka/cautious-enigma.git
+ * [new branch]      master -> master
+Scotts-MacBook-Pro:myProject scott$ clear
+
+Scotts-MacBook-Pro:myProject scott$ git clone https://github.com/crazycraka/cautious-enigma.git
+fatal: destination path 'cautious-enigma' already exists and is not an empty directory.
+Scotts-MacBook-Pro:myProject scott$ git clone https://github.com/crazycraka/learn-git.git
+Cloning into 'learn-git'...
+remote: Counting objects: 768, done.
+remote: Total 768 (delta 0), reused 0 (delta 0), pack-reused 768
+Receiving objects: 100% (768/768), 102.24 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (271/271), done.
+Checking connectivity... done.
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	learn-git/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Scotts-MacBook-Pro:myProject scott$ git add .
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   learn-git
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+Scotts-MacBook-Pro:myProject scott$ clear
+
+
+
+
+
+
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   learn-git
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+Scotts-MacBook-Pro:myProject scott$ git commit -m "modifed for min-project2"
+[master ff3c43c] modifed for min-project2
+ 1 file changed, 1 insertion(+)
+ create mode 160000 learn-git
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:myProject scott$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+Scotts-MacBook-Pro:myProject scott$ git push --set-upstream origin master
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 283 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/crazycraka/cautious-enigma.git
+   9f1b089..ff3c43c  master -> master
+Branch master set up to track remote branch master from origin.
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:myProject scott$ git add learn-git
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:myProject scott$ clear
+
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:myProject scott$ git diff
+diff --git a/learn-git b/learn-git
+--- a/learn-git
++++ b/learn-git
+@@ -1 +1 @@
+-Subproject commit 3e4c38472dad9aa391640a23bc022bcc14d97b21
++Subproject commit 3e4c38472dad9aa391640a23bc022bcc14d97b21-dirty
+Scotts-MacBook-Pro:myProject scott$ git add .
+Scotts-MacBook-Pro:myProject scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   learn-git (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:myProject scott$ pwd
+/Users/scott/Programming/devmtn/myProject
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma	learn-git	test.html
+Scotts-MacBook-Pro:myProject scott$ git clone https://github.com/crazycraka/learn-git.git
+fatal: destination path 'learn-git' already exists and is not an empty directory.
+Scotts-MacBook-Pro:myProject scott$ ls
+cautious-enigma	learn-git	test.html
+Scotts-MacBook-Pro:myProject scott$ cd learn-git
+Scotts-MacBook-Pro:learn-git scott$ ls
+README.md	fun.txt
+Scotts-MacBook-Pro:learn-git scott$ clear
+
+Scotts-MacBook-Pro:learn-git scott$ cd fun.txt
+-bash: cd: fun.txt: Not a directory
+Scotts-MacBook-Pro:learn-git scott$ read fun.txt
+edit fun.txt
+-bash: read: `fun.txt': not a valid identifier
+Scotts-MacBook-Pro:learn-git scott$ vim fun.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+“Hello world!” - said everyone, always and I'll say more, I like cheese
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
