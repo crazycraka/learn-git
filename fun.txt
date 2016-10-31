@@ -299,16 +299,65 @@ Scotts-MacBook-Pro:learn-git scott$ read fun.txt
 edit fun.txt
 -bash: read: `fun.txt': not a valid identifier
 Scotts-MacBook-Pro:learn-git scott$ vim fun.txt
+Scotts-MacBook-Pro:learn-git scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
+	modified:   README.md
+	modified:   fun.txt
 
+no changes added to commit (use "git add" and/or "git commit -a")
+Scotts-MacBook-Pro:learn-git scott$ git add .
+Scotts-MacBook-Pro:learn-git scott$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
+	modified:   README.md
+	modified:   fun.txt
 
+Scotts-MacBook-Pro:learn-git scott$ git diff
+Scotts-MacBook-Pro:learn-git scott$ git commit -m "changed fun.txt to say other stuff"
+[master d621105] changed fun.txt to say other stuff
+ 2 files changed, 381 insertions(+), 1 deletion(-)
+ rewrite fun.txt (100%)
+Scotts-MacBook-Pro:learn-git scott$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.29 KiB | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/crazycraka/learn-git.git
+   3e4c384..d621105  master -> master
+Scotts-MacBook-Pro:learn-git scott$ clear
 
-
-
-
-
-
+Scotts-MacBook-Pro:learn-git scott$ pwd
+/Users/scott/Programming/devmtn/myProject/learn-git
+Scotts-MacBook-Pro:learn-git scott$ cd ..
+Scotts-MacBook-Pro:myProject scott$ cd learn-git
+Scotts-MacBook-Pro:learn-git scott$ ls
+README.md	fun.txt
+Scotts-MacBook-Pro:learn-git scott$ git clone https://github.com/crazycraka/learn-git.git new-learn-git
+Cloning into 'new-learn-git'...
+remote: Counting objects: 772, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 772 (delta 0), reused 0 (delta 0), pack-reused 768
+Receiving objects: 100% (772/772), 107.50 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (271/271), done.
+Checking connectivity... done.
+Scotts-MacBook-Pro:learn-git scott$ ls
+README.md	fun.txt		new-learn-git
+Scotts-MacBook-Pro:learn-git scott$ cd new-learn-git
+Scotts-MacBook-Pro:new-learn-git scott$ ls
+README.md	fun.txt
+Scotts-MacBook-Pro:new-learn-git scott$ vim fun.txt
+Scotts-MacBook-Pro:new-learn-git scott$ git diff
+Scotts-MacBook-Pro:new-learn-git scott$ vim fun.txt
 
 
 
@@ -336,44 +385,35 @@ Scotts-MacBook-Pro:learn-git scott$ vim fun.txt
 
 
 “Hello world!” - said everyone, always and I'll say more, I like cheese
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
-~                                                                               
+~  especially the good kinds                                                     
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~          asdf                                                                  
+~
+~
+~
+~
+~
+@                                                                               
 -- INSERT --
